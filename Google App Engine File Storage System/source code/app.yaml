@@ -1,0 +1,62 @@
+
+
+
+
+application: cloudstoragepa04
+version: 1
+runtime: python27
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /
+  script: uploadfile.app
+
+- url: /upload
+  script: uploadfile.app
+
+- url: /pa03bucket1/.*
+  script: uploadfile.app
+
+- url: /find 
+  script: uploadfile.app
+
+- url: /check
+  script: uploadfile.app
+
+- url: /delete
+  script: uploadfile.app
+
+- url: /listall
+  script: uploadfile.app
+
+- url: /removeallcache
+  script: uploadfile.app
+
+- url: /deleteall
+  script: uploadfile.app
+
+- url: /cachesize
+  script: uploadfile.app
+
+- url: /cachesizeelem
+  script: uploadfile.app
+
+- url: /regexlistall
+  script: uploadfile.app
+
+- url: /matchregex
+  script: uploadfile.app
+
+- url: /bmfind.*
+  script: uploadfile.app
+
+- url: /storagesizeelem
+  script: uploadfile.app
+
+- url: /storagesizemb
+  script: uploadfile.app  
+
+libraries:
+- name: webapp2
+  version: latest

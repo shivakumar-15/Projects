@@ -1,0 +1,24 @@
+Programming language: Python
+
+Makesure python intepreter is intalled on your system. 
+1.Please  sure python intepreter is installed on your system. 
+2.To verfiy python installation use following command to check: which python .  Now the get the path where python in installed.
+
+Configure the python script file to run the <filename>.py
+1.To run the a python script the first line of the script file  must be the path to the  python intepreter. 
+2.This path can be found using the "which python" command 
+ 
+Steps for execution
+1. Port numbers 1914 1915 1916 1917 are used make sure these ports are unused.
+2. Open TWO terminals, ONE for the server ONE for the client , navigate to the directory containing the server and client programs.
+3. Start the server before running the client in one terminal using the command ./<filename>.py <packetsize> . The packet size must be in bytes
+4. Example: ./TCP_server.py 1000 . here the segment size in 1KB
+
+Segment sizes
+1 byte : 1
+1 Kilobyte : 1000
+1 Megabyte : 1000000
+
+For thread programs use the below syntax to execute 
+1. ./<file_name>.py <segment size> <number of threads>
+example: ./TCP_thread_server 1000 2
